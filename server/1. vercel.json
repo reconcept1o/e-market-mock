@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/early-adopters",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MONGODB_URI": "mongodb+srv://reconcept1o:909090Kendimden.@kendimden.bsxu3y7.mongodb.net/kendimden?retryWrites=true&w=majority",
+    "FRONTEND_URL": "https://e-market-mock-git-main-slymns-projects.vercel.app/",
+    "PORT": "5000"
+  }
+}

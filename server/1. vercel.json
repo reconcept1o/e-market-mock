@@ -14,8 +14,8 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_URI": "mongodb+srv://reconcept1o:909090Kendimden.@kendimden.bsxu3y7.mongodb.net/kendimden?retryWrites=true&w=majority",
-    "FRONTEND_URL": "https://e-market-mock-git-main-slymns-projects.vercel.app/",
+    "MONGODB_URI": "mongodb+srv://reconcept1o:<your_new_password>@kendimden.bsxu3y7.mongodb.net/kendimden?retryWrites=true&w=majority",
+    "FRONTEND_URL": "https://e-market-mock.vercel.app/",
     "PORT": "5000"
   }
 }

@@ -297,7 +297,7 @@ const Home = () => {
                 <p style={styles.heroSubtitle}>
                   Kendi markanızı oluşturabileceğiniz, ürünlerinizi sergileyip
                   güvenle satabileceğiniz <strong>yeni nesil e-pazaryeri platformu.</strong>
-                  Açılışa özel 500 üyemizden{" "}
+                  Açılışa özel ilk 1000 üyemizden{" "}
                   <strong>ömür boyu komisyon ve aidat almıyoruz.</strong>
                 </p>
                 <Button style={styles.ctaButton} className="mt-4" onClick={handleShowModal}>

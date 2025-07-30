@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/api/routers/early-adopters",
+      "src": "/api/routers/EarlyAdopter.js",
       "dest": "server.js"
     }
   ],

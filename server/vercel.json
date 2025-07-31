@@ -2,20 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "public/**", 
+      "use": "@vercel/static"
+    },
+    {
+      "src": "server/server.js", 
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/routers/EarlyAdopter.js",
-      "dest": "server.js"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "MONGODB_URI": "mongodb+srv://reconcept1o:<your_new_password>@kendimden.bsxu3y7.mongodb.net/kendimden?retryWrites=true&w=majority",
-    "FRONTEND_URL": "https://e-market-mock.vercel.app/",
-    "PORT": "5000"
-  }
+    { "src": "/api/(.*)", "dest": "/server/server.js" }, 
+    { "src": "/(.*)", "dest": "/public/$1" } 
+  ]
 }
